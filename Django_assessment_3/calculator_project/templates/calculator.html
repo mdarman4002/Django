@@ -1,0 +1,26 @@
+<!-- calculator/templates/calculator.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <form method="post" action="{% url 'calculate' %}">
+        {% csrf_token %}
+        <input type="number" name="num1" placeholder="Enter first number" required><br><br>
+        <input type="number" name="num2" placeholder="Enter second number" required><br><br>
+        <label>Select operation:</label>
+        <select name="operation" required>
+            <option value="add">Addition</option>
+            <option value="subtract">Subtraction</option>
+            <option value="multiply">Multiplication</option>
+            <option value="divide">Division</option>
+        </select><br><br>
+        <button type="submit">Calculate</button>
+    </form>
+    {% if result %}
+    <h2>Result: {{ result }}</h2>
+    {% endif %}
+</body>
+</html>

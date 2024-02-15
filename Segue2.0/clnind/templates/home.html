@@ -1,0 +1,32 @@
+{% load static %}
+{% static "images" as baseUrl %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Dropdown Menu Example</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    {% csrf_token %}
+    
+    <nav>
+        <ul>
+            <li><a href="">Home</a>
+                <ul class="dropdown">
+                    <li><a href="#" >Option 1</a></li>
+                    <li><a href="#">Option 2</a></li>
+                    <li><a href="#">Option 3</a></li>
+                </ul>
+            </li>
+           
+        </ul>
+    </nav>
+
+    <!-- Content Goes Here -->
+
+</body>
+
+</html>

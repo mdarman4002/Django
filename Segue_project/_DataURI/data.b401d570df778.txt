@@ -1,0 +1,1 @@
+chrome-extension://mcgbeeipkmelnpldkobichboakdfaeon/css/github-dark.min.css

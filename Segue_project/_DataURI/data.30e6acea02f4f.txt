@@ -1,0 +1,1 @@
+chrome-extension://mcgbeeipkmelnpldkobichboakdfaeon/css/xq-light.css

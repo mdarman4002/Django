@@ -1,0 +1,14 @@
+<body>
+
+    <center>
+        <form action="verify/" method="post">
+            {% csrf_token %}
+            Enter username: <input type="text" name="un"  placeholder="enter username"><br><br>
+            Enter password: <input type="password" name="pwd"><br><br>
+
+            <input type="submit" value="login">
+          
+        </form>
+        <input type="submit" value="forget">
+    </center>
+</body>
